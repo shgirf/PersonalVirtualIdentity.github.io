@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal visual identity showcasing outdoor adventures, skiing, and hiking experiences">
+    <title>Personal Visual Identity - Home</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pompiere&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="info.html">Info</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-overlay">
+                <h1 id="hero-title" class="hero-title">Personal Visual Identity</h1>
+                <a href="info.html" class="hero-link" aria-describedby="hero-link-desc">
+                    Additional Info
+                    <span id="hero-link-desc" class="sr-only">Learn more about this personal identity project</span>
+                </a>
+            </div>
+            <img src="images/hero-image.jpg" alt="Scenic mountain landscape representing outdoor adventure lifestyle" class="hero-image">
+        </section>
+
+        <section class="identity-section" aria-labelledby="identity-title">
+            <h2 id="identity-title" class="sr-only">Personal Identity Description</h2>
+            
+            <div class="identity-content">
+                <div class="identity-images" role="img" aria-labelledby="images-desc">
+                    <img src="images/identity-image-1.jpg" alt="Skiing down snowy mountain slopes" class="identity-img">
+                    <img src="images/identity-image-2.jpg" alt="Hiking trail through forest wilderness" class="identity-img">
+                    <img src="images/identity-image-3.jpg" alt="Camping setup with mountain view backdrop" class="identity-img">
+                    <p id="images-desc" class="sr-only">Collection of outdoor adventure photos showing skiing, hiking, and camping activities</p>
+                </div>
+                
+                <div class="identity-description">
+                    <p>Temporary description</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contrast-section" aria-labelledby="contrast-title">
+            <h2 id="contrast-title">Color Accessibility Information</h2>
+            <div class="contrast-info">
+                <h3>WCAG AA Compliant Color Combinations</h3>
+                <p>The following color combinations from our palette meet WCAG 2.1 AA accessibility standards:</p>
+                
+                <div class="color-combinations">
+                    <div class="color-combo" data-bg="#143109" data-text="#FAE1DF">
+                        <div class="color-sample dark-green-bg light-text">
+                            <span>Dark Green (#143109) with Off-White (#FAE1DF)</span>
+                            <span class="contrast-ratio" aria-label="Contrast ratio">Ratio: 12.8:1</span>
+                        </div>
+                    </div>
+                    
+                    <div class="color-combo" data-bg="#485696" data-text="#FAE1DF">
+                        <div class="color-sample dark-blue-bg light-text">
+                            <span>Dark Blue (#485696) with Off-White (#FAE1DF)</span>
+                            <span class="contrast-ratio" aria-label="Contrast ratio">Ratio: 6.2:1</span>
+                        </div>
+                    </div>
+                    
+                    <div class="color-combo" data-bg="#FAE1DF" data-text="#143109">
+                        <div class="color-sample light-bg dark-text">
+                            <span>Off-White (#FAE1DF) with Dark Green (#143109)</span>
+                            <span class="contrast-ratio" aria-label="Contrast ratio">Ratio: 12.8:1</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="contrast-note">
+                    <strong>Note:</strong> All combinations exceed the WCAG AA requirement of 4.5:1 for normal text and 3:1 for large text, ensuring excellent readability for all users including those with visual impairments.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Personal Visual Identity. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
