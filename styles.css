@@ -118,7 +118,7 @@ nav a[aria-current="page"] {
 
 /* Main Content */
 main {
-    margin-top: 60px; /* Account for fixed header */
+    margin-top: 70px; /* Increased space to ensure text is fully visible below banner */
 }
 
 /* Hero Section */
@@ -315,9 +315,32 @@ main {
 
 /* Info Page Specific Styles */
 .info-page {
-    padding: var(--space-md) var(--space-sm);
+    padding: 0; /* Remove default padding to allow hero image to be full width */
+    max-width: none; /* Remove max-width constraint for hero section */
+    margin: 0;
+}
+
+.info-hero-section {
+    width: 100%;
+    height: 40vh; /* Proportional height for the dramatic landscape */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-lg);
+}
+
+.info-hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info-page section {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 var(--space-sm);
 }
 
 .info-page h1 {
